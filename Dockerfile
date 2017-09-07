@@ -18,3 +18,4 @@ RUN a2ensite 000-default.conf; a2ensite default-ssl.conf
 ADD start.sh /start.sh
 RUN chmod 0755 /start.sh
 CMD /start.sh
+
