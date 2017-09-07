@@ -6,9 +6,9 @@ RUN apt-get -y update && \
 
 RUN a2enmod proxy proxy_http
 # Copy config site available
-ADD reach.conf /etc/apache2/sites-available/reach.conf
+ADD reach.conf /etc/apache2/sites-available/000-default.conf
 
-RUN a2ensite reach.conf
+RUN a2ensite 000-default.conf
 
 EXPOSE 80
 
