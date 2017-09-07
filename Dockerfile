@@ -1,7 +1,7 @@
 FROM resin/rpi-raspbian:latest
 MAINTAINER  Julien Ancelin 
             
-RUN apt-get -y update \
+RUN apt-get -y update && \
     apt-get install -y apache2
 
 RUN apt-get clean && apt-get -y autoremove
