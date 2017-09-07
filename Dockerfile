@@ -12,3 +12,4 @@ ADD start.sh /start.sh
 RUN chmod 0755 /start.sh
 CMD /start.sh
 
+EXPOSE 80
