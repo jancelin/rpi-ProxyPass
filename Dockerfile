@@ -8,7 +8,7 @@ RUN a2enmod proxy proxy_http
 # Copy config site available
 ADD reach.conf /etc/apache2/sites-available/reach.conf
 
-RUN a2ensite reach.conf
+RUN a2ensite reach.local
 
 EXPOSE 80
 
