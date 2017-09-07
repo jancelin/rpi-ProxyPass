@@ -2,7 +2,7 @@ FROM resin/rpi-raspbian:latest
 MAINTAINER  Julien Ancelin 
             
 RUN apt-get -y update && \
-    apt-get install -y apache2
+    apt-get install -y apache2 vim
 
 RUN a2enmod proxy proxy_http
 # Copy config site available
