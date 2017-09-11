@@ -1,5 +1,5 @@
 ```
-docker build -t nginx /home/...
+docker build -t nginx https://github.com/jancelin/rpi-ProxyPass.git#master:/nginx
 ```
 
 
