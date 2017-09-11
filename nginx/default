@@ -1,0 +1,8 @@
+server {
+        listen   80;
+        server_name     rtcm3.local;
+        location / {
+                proxy_pass         http://172.24.1.55:9000/;
+                proxy_buffering off;
+        }
+}
